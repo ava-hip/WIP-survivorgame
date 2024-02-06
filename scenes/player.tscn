@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnf6iu6mburfi"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_7wu43"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://assets/characters/happy_boo/happy_boo.tscn" id="1_get5i"]
+[ext_resource type="PackedScene" uid="uid://b3igguuxcx01g" path="res://scenes/gun.tscn" id="3_4e7w8"]
+
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cvl00"]
+radius = 29.0689
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5pluq"]
+size = Vector2(58.3333, 69.4445)
+
+[node name="Player" type="CharacterBody2D"]
+platform_floor_layers = 4294901760
+script = ExtResource("1_7wu43")
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_get5i")]
+unique_name_in_owner = true
+position = Vector2(0, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_cvl00")
+
+[node name="Gun" parent="." instance=ExtResource("3_4e7w8")]
+position = Vector2(0, -27)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-2, -41)
+scale = Vector2(1.44, 1.44)
+shape = SubResource("RectangleShape2D_5pluq")
+debug_color = Color(0.776471, 0.372549, 0.623529, 0.419608)

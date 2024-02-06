@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://cu4vjc3324fei"]
 
-[ext_resource type="PackedScene" uid="uid://cnf6iu6mburfi" path="res://player.tscn" id="1_fdkxo"]
-[ext_resource type="Script" path="res://game.gd" id="1_g0ji7"]
-[ext_resource type="PackedScene" uid="uid://bliw3xe4c8apd" path="res://pine_tree.tscn" id="2_tk2wh"]
-[ext_resource type="AudioStream" uid="uid://c7pxfy4fyks0q" path="res://music/HONEY ISLAND.wav" id="4_5d867"]
-[ext_resource type="PackedScene" uid="uid://baj7sxdgiph5w" path="res://mob.tscn" id="5_76eev"]
+[ext_resource type="PackedScene" uid="uid://cnf6iu6mburfi" path="res://scenes/player.tscn" id="1_fdkxo"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_g0ji7"]
+[ext_resource type="PackedScene" uid="uid://bliw3xe4c8apd" path="res://scenes/pine_tree.tscn" id="2_tk2wh"]
+[ext_resource type="AudioStream" uid="uid://c7pxfy4fyks0q" path="res://assets/music/HONEY ISLAND.wav" id="4_5d867"]
+[ext_resource type="PackedScene" uid="uid://baj7sxdgiph5w" path="res://scenes/mob.tscn" id="5_76eev"]
 
 [sub_resource type="Curve2D" id="Curve2D_fx10f"]
 _data = {

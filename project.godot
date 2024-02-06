@@ -81,7 +81,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-GameoverInterface="*res://gameover_interface.tscn"
+GameoverInterface="*res://scenes/gameover_interface.tscn"
 
 [display]
 
