@@ -15,5 +15,6 @@ func _on_timer_timeout():
 func _on_player_health_depleted():
 	GameoverInterface.visible = true
 	GameoverInterface.gameover_interface_on()
+	GameoverInterface.display_score()
 
 

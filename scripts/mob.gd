@@ -19,6 +19,7 @@ func take_damage():
 	%Slime.play_hurt()
 	
 	if health == 0 :
+		GameoverInterface.score += 1
 		print(score)
 		queue_free()
 		const SMOKE_EXPLOSION = preload("res://assets/smoke_explosion/smoke_explosion.tscn")

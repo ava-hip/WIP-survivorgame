@@ -2,3 +2,6 @@ res://game.tscn
 res://gun.gd
 res://game.gd
 res://scripts/mob.gd
+res://scripts/gameover_interface.gd
+res://scenes/gameover_interface.tscn
+res://scripts/game.gd
