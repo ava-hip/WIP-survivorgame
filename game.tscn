@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cu4vjc3324fei"]
+[gd_scene load_steps=6 format=3 uid="uid://cu4vjc3324fei"]
 
 [ext_resource type="PackedScene" uid="uid://cnf6iu6mburfi" path="res://scenes/player.tscn" id="1_fdkxo"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_g0ji7"]
 [ext_resource type="PackedScene" uid="uid://bliw3xe4c8apd" path="res://scenes/pine_tree.tscn" id="2_tk2wh"]
 [ext_resource type="AudioStream" uid="uid://c7pxfy4fyks0q" path="res://assets/music/HONEY ISLAND.wav" id="4_5d867"]
-[ext_resource type="PackedScene" uid="uid://baj7sxdgiph5w" path="res://scenes/mob.tscn" id="5_76eev"]
 
 [sub_resource type="Curve2D" id="Curve2D_fx10f"]
 _data = {
@@ -22,6 +21,7 @@ layer = -10
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 offset_right = 1976.0
 offset_bottom = 1132.0
+color = Color(0.0823529, 0.34902, 0.247059, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_fdkxo")]
 position = Vector2(974, 572)
@@ -38,6 +38,39 @@ rotation = -0.0022482
 [node name="PineTree" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(628, 688)
 
+[node name="PineTree4" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(520, 721)
+
+[node name="PineTree13" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(577, 1027)
+
+[node name="PineTree14" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(880, 1294)
+
+[node name="PineTree6" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(331, 301)
+
+[node name="PineTree7" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(247, 922)
+
+[node name="PineTree8" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(1354, 481)
+
+[node name="PineTree9" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(1615, 46)
+
+[node name="PineTree10" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(2020, 247)
+
+[node name="PineTree11" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(1834, 610)
+
+[node name="PineTree12" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(1750, 1267)
+
+[node name="PineTree5" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(667, 748)
+
 [node name="PineTree2" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(880, 268)
 
@@ -52,8 +85,6 @@ autostart = true
 stream = ExtResource("4_5d867")
 volume_db = -20.0
 autoplay = true
-
-[node name="mob" parent="." instance=ExtResource("5_76eev")]
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

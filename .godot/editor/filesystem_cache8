@@ -1,14 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707241015
+::res://::1707244315
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1707239632::0::1::::<><>::
-game.tscn::PackedScene::6237776473618465724::1707241009::0::1::::<><>::uid://cnf6iu6mburfi::::res://scenes/player.tscn<>res://scripts/game.gd<>uid://bliw3xe4c8apd::::res://scenes/pine_tree.tscn<>uid://c7pxfy4fyks0q::::res://assets/music/HONEY ISLAND.wav<>uid://baj7sxdgiph5w::::res://scenes/mob.tscn
+game.tscn::PackedScene::6237776473618465724::1707244315::0::1::::<><>::uid://cnf6iu6mburfi::::res://scenes/player.tscn<>res://scripts/game.gd<>uid://bliw3xe4c8apd::::res://scenes/pine_tree.tscn<>uid://c7pxfy4fyks0q::::res://assets/music/HONEY ISLAND.wav<>uid://baj7sxdgiph5w::::res://scenes/mob.tscn
 icon.png::CompressedTexture2D::621515402784007901::1707239632::1707239632::1::::<><>::
 ::res://addons/::1707239632
 ::res://addons/colorpicker_presets/::1707239632
 colorpicker_presets.gd::GDScript::-1::1707239632::0::1::::<>EditorPlugin<>::
 plugin.cfg::TextFile::-1::1707239632::0::1::::<><>::
 README.md::TextFile::-1::1707239632::0::1::::<><>::
-::res://assets/::1707241015
+::res://assets/::1707244380
+bg.jpg::CompressedTexture2D::6926285437034755017::1707244380::1707244385::1::::<><>::
 ::res://assets/characters/::1707241009
 ground_shadow.png::CompressedTexture2D::4668018078467755571::1707239632::1707241009::1::::<><>::
 ::res://assets/characters/happy_boo/::1707241009
@@ -21,16 +22,16 @@ square_lower_leg.png::CompressedTexture2D::7651536677184113460::1707239632::1707
 square_modification_stack.tres::SkeletonModificationStack2D::8504717324922621560::1707239632::0::1::::<><>::
 square_ref.png::CompressedTexture2D::4290601870950781964::1707239632::1707241009::1::::<><>::
 square_upper_leg.png::CompressedTexture2D::1148792968243506332::1707239632::1707241009::1::::<><>::
-::res://assets/characters/slime/::1707241009
+::res://assets/characters/slime/::1707244280
 slime.gd::GDScript::-1::1707239632::0::1::::<>Node2D<>::
-slime.tscn::PackedScene::995535223809565591::1707241009::0::1::::<><>::uid://dvgfmy6vtvjji::::res://assets/characters/slime/slime_body.png<>res://assets/characters/slime/slime.gd<>uid://b7rhtttevhxtj::::res://assets/characters/ground_shadow.png<>uid://c078jrp2yvc4s::::res://assets/characters/slime/slime_face.png<>uid://btbxea1f3vwot::::res://assets/characters/slime/slime_body_hurt.png<>uid://cai2ijnbypqtr::::res://assets/characters/slime/slime_hurt_eyes.png
+slime.tscn::PackedScene::995535223809565591::1707244280::0::1::::<><>::res://assets/characters/slime/slime.gd<>uid://b7rhtttevhxtj::::res://assets/characters/ground_shadow.png<>uid://dvgfmy6vtvjji::::res://assets/characters/slime/slime_body.png<>uid://btbxea1f3vwot::::res://assets/characters/slime/slime_body_hurt.png<>uid://c078jrp2yvc4s::::res://assets/characters/slime/slime_face.png<>uid://cai2ijnbypqtr::::res://assets/characters/slime/slime_hurt_eyes.png
 slime_body.png::CompressedTexture2D::8645940357922743702::1707239632::1707241009::1::::<><>::
 slime_body_hurt.png::CompressedTexture2D::3723476765009385039::1707239632::1707241009::1::::<><>::
 slime_face.png::CompressedTexture2D::6595643196702037820::1707239632::1707241009::1::::<><>::
 slime_hurt_eyes.png::CompressedTexture2D::4791010527445338927::1707239632::1707241009::1::::<><>::
 ::res://assets/music/::1707241010
 HONEY ISLAND.wav::AudioStreamWAV::7051256755536683610::1707239632::1707241010::1::::<><>::
-::res://assets/pistol/::1707239632
+::res://assets/pistol/::1707241015
 pistol.png::CompressedTexture2D::6081771334990092076::1707239632::1707241015::1::::<><>::
 projectile.png::CompressedTexture2D::7550039277502144023::1707239632::1707241015::1::::<><>::
 ::res://assets/pistol/impact/::1707241015
@@ -48,17 +49,17 @@ smoke_explosion.gdshader::Shader::-1::1707239632::0::1::::<><>::
 smoke_explosion.tscn::PackedScene::7675803860678853612::1707241009::0::1::::<><>::res://assets/smoke_explosion/smoke_explosion.gdshader<>res://assets/smoke_explosion/smoke_explosion.gd
 ::res://assets/trees/::1707240998
 pine_tree.png::CompressedTexture2D::4806194308614878228::1707239632::1707240998::1::::<><>::
-::res://scenes/::1707241015
+::res://scenes/::1707244316
 bullet.tscn::PackedScene::8156113514936789735::1707241015::0::1::::<><>::res://scripts/bullet.gd<>uid://dftkbqwsfd68r::::res://assets/pistol/projectile.png
-gameover_interface.tscn::PackedScene::353137624392132395::1707240826::0::1::::<><>::res://scripts/gameover_interface.gd
+gameover_interface.tscn::PackedScene::353137624392132395::1707244133::0::1::::<><>::res://scripts/gameover_interface.gd<>uid://cai2ijnbypqtr::::res://assets/characters/slime/slime_hurt_eyes.png
 gun.tscn::PackedScene::4368599426722226582::1707241015::0::1::::<><>::res://scripts/gun.gd<>uid://cswb5do8rrj7q::::res://assets/pistol/pistol.png
-mob.tscn::PackedScene::2406976384493822502::1707241009::0::1::::<><>::uid://ogik4s70pgwl::::res://assets/characters/slime/slime.tscn<>res://scripts/mob.gd
-pine_tree.tscn::PackedScene::3176399977352003273::1707241009::0::1::::<><>::uid://b7rhtttevhxtj::::res://assets/characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://assets/trees/pine_tree.png
+mob.tscn::PackedScene::2406976384493822502::1707244254::0::1::::<><>::res://scripts/mob.gd<>uid://ogik4s70pgwl::::res://assets/characters/slime/slime.tscn
+pine_tree.tscn::PackedScene::3176399977352003273::1707244316::0::1::::<><>::uid://b7rhtttevhxtj::::res://assets/characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://assets/trees/pine_tree.png
 player.tscn::PackedScene::5697515835481228646::1707241009::0::1::::<><>::res://scripts/player.gd<>uid://pbmyh1qru7p::::res://assets/characters/happy_boo/happy_boo.tscn<>uid://b3igguuxcx01g::::res://scenes/gun.tscn
-::res://scripts/::1707240966
+::res://scripts/::1707242834
 bullet.gd::GDScript::-1::1707240677::0::1::::<>Area2D<>::
-game.gd::GDScript::-1::1707240937::0::1::::<>Node2D<>::
-gameover_interface.gd::GDScript::-1::1707240677::0::1::::<>CanvasLayer<>::
+game.gd::GDScript::-1::1707242718::0::1::::<>Node2D<>::
+gameover_interface.gd::GDScript::-1::1707242834::0::1::::<>CanvasLayer<>::
 gun.gd::GDScript::-1::1707240872::0::1::::<>Area2D<>::
-mob.gd::GDScript::-1::1707240677::0::1::::<>CharacterBody2D<>::
+mob.gd::GDScript::-1::1707241587::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1707240677::0::1::::<>CharacterBody2D<>::

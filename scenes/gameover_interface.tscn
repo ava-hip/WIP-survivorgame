@@ -9,6 +9,7 @@ visible = false
 script = ExtResource("1_rtg4t")
 
 [node name="GameOverBG" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -73,7 +74,7 @@ horizontal_alignment = 1
 [node name="Restart" type="Button" parent="."]
 anchors_preset = -1
 anchor_left = 0.491667
-anchor_top = 0.518981
+anchor_top = 0.504167
 anchor_right = 0.508333
 anchor_bottom = 0.504167
 offset_left = -81.0

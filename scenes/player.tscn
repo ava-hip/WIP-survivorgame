@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://assets/characters/happy_boo/happy_boo.tscn" id="1_get5i"]
 [ext_resource type="PackedScene" uid="uid://b3igguuxcx01g" path="res://scenes/gun.tscn" id="3_4e7w8"]
 
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_cvl00"]
 radius = 29.0689
 
