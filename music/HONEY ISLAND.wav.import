@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7pxfy4fyks0q"
+path="res://.godot/imported/HONEY ISLAND.wav-241a8c7cda46a238cc1aae6a6dac0fde.sample"
+
+[deps]
+
+source_file="res://music/HONEY ISLAND.wav"
+dest_files=["res://.godot/imported/HONEY ISLAND.wav-241a8c7cda46a238cc1aae6a6dac0fde.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

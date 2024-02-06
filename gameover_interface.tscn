@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://fbceiueqs8ax"]
+
+[ext_resource type="Script" path="res://gameover_interface.gd" id="1_rtg4t"]
+
+[node name="GameoverInterface" type="CanvasLayer"]
+process_mode = 3
+visible = false
+script = ExtResource("1_rtg4t")
+
+[node name="GameOverBG" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.152941, 0.168627, 0.188235, 0.913725)
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -270.5
+offset_top = 34.0
+offset_right = 270.5
+offset_bottom = 239.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 150
+text = "Nullos !"
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -81.0
+offset_top = -32.5
+offset_right = 81.0
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 41
+text = "Rejouer"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

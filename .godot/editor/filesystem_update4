@@ -1,0 +1,9 @@
+res://game.tscn
+res://mob.tscn
+res://game.gd
+res://mob.gd
+res://gun.gd
+res://player.gd
+res://gameover_interface.gd
+res://gameover_interface.tscn
+res://player.tscn
