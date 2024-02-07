@@ -1,8 +1,2 @@
 res://game.tscn
-res://scenes/player.tscn
-res://scenes/mob.tscn
-res://scripts/player.gd
-res://scripts/mob.gd
-res://scripts/game.gd
-res://scenes/gameover_interface.tscn
-res://scripts/gameover_interface.gd
+res://scripts/gun.gd

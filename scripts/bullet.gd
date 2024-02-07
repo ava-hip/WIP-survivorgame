@@ -17,7 +17,6 @@ func _physics_process(delta):
 	else: 
 		speed = 3500	
 	
-	
 	var direction = Vector2.RIGHT.rotated(rotation)
 	position += direction * speed * delta
 	

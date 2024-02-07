@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcykgpv1034xc"]
+
+[ext_resource type="Texture2D" uid="uid://dftkbqwsfd68r" path="res://assets/pistol/projectile.png" id="2_qp30k"]
+
+[sub_resource type="GDScript" id="GDScript_rc6mw"]
+script/source = "extends Area2D
+
+var travelled_distance = 0
+
+func _physics_process(delta):
+	const RANGE = 1200
+	var speed = 1200
+	
+	if GameoverInterface.score < 5:
+		speed = 1200
+	elif GameoverInterface.score < 15 && GameoverInterface.score > 5:
+		speed = 1500
+	elif GameoverInterface.score < 30 && GameoverInterface.score > 15:
+		speed = 2000
+	elif GameoverInterface.score < 50 && GameoverInterface.score > 30:
+		speed = 2500
+	else: 
+		speed = 3500	
+	
+	var direction = Vector2.RIGHT.rotated(rotation)
+	position += direction * speed * delta
+	
+	travelled_distance += speed * delta
+	if travelled_distance > RANGE:
+		queue_free()
+
+
+func _on_body_entered(body):
+	queue_free()
+	if body.has_method(\"take_damage\") :
+		body.take_damage()
+
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4rkde"]
+radius = 15.0
+
+[node name="Bullet" type="Area2D"]
+top_level = true
+position = Vector2(-10, 1)
+collision_layer = 0
+collision_mask = 3
+script = SubResource("GDScript_rc6mw")
+
+[node name="Projectile" type="Sprite2D" parent="."]
+position = Vector2(-3, -2)
+texture = ExtResource("2_qp30k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9, -1)
+shape = SubResource("CircleShape2D_4rkde")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
