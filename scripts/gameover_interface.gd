@@ -19,7 +19,10 @@ func gameover_interface_off():
 func _on_restart_pressed():
 	GameoverInterface.gameover_interface_off()
 	GameoverInterface.score = 0
-	
+
+func _on_quit_pressed():
+	get_tree().quit()
+
 func display_score():
 	score = GameoverInterface.score
 	if GameoverInterface.score > GameoverInterface.bestScore :
