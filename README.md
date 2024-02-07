@@ -20,3 +20,9 @@ Pour tout retour, rapport de bug ou demande d'assistance:
 - via les commentaires itch
 
 Amusez-vous bien !
+
+### Whats next
+- [ ] Changement d'assets et nouvelle DA
+- [ ] Ajout d'armes
+- [ ] Ajout de mobs
+- [ ] Menu 
