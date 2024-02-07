@@ -3,10 +3,10 @@
 https://ccloki.itch.io/survivor-wip
 
 ## Description
-*nom à insérer* est un petit jeu de survie créé à l'aide du moteur de jeu Godot. Dans ce jeu, vous contrôlez un personnage qui doit survivre contre une hordes de slimes.
+*nom à insérer* est un petit jeu de survie créé sur Godot. Dans ce jeu, vous contrôlez un personnage qui doit survivre contre une hordes de slimes.
 
 ## Fonctionnalités
-- Contrôles : Utilisez les touches fléchées ou ZQSD pour déplacer le personnage.
+- Contrôles : Utilisez les touches ZQSD pour déplacer le personnage.
 - Gameplay de survie : Restez en vie le plus longtemps possible, votre arme s'améliore au fil des kills 
 
 ## Crédits
