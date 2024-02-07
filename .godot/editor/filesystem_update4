@@ -1,12 +1,5 @@
 res://game.tscn
-res://gun.gd
-res://game.gd
-res://scripts/mob.gd
-res://scripts/gameover_interface.gd
-res://scenes/gameover_interface.tscn
-res://scripts/game.gd
-res://assets/characters/slime/slime.tscn
-res://scenes/mob.tscn
-res://scenes/pine_tree.tscn
 res://scenes/player.tscn
-res://scripts/bullet.gd
+res://scenes/mob.tscn
+res://scripts/player.gd
+res://scripts/mob.gd

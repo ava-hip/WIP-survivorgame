@@ -82,6 +82,7 @@ wait_time = 0.3
 autostart = true
 
 [node name="MusicBG" type="AudioStreamPlayer" parent="."]
+process_mode = 3
 stream = ExtResource("4_5d867")
 volume_db = -20.0
 autoplay = true
