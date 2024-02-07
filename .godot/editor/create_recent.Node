@@ -1,5 +1,6 @@
 CollisionShape2D
 Area2D
+Timer
 TextureRect
 ColorRect
 CanvasModulate
@@ -8,7 +9,6 @@ Label
 AudioStreamPlayer
 Button
 CanvasLayer
-Timer
 PathFollow2D
 Path2D
 ProgressBar

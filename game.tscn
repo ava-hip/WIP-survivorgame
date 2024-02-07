@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cu4vjc3324fei"]
+[gd_scene load_steps=7 format=3 uid="uid://cu4vjc3324fei"]
 
 [ext_resource type="PackedScene" uid="uid://cnf6iu6mburfi" path="res://scenes/player.tscn" id="1_fdkxo"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_g0ji7"]
@@ -10,6 +10,9 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -122, -153, 0, 0, 0, 0, 2102, -158, 0, 0, 0, 0, 2108, 1243, 0, 0, 0, 0, -130, 1235, 0, 0, 0, 0, -122, -153)
 }
 point_count = 5
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kw523"]
+size = Vector2(3404, 2098)
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -35,14 +38,24 @@ unique_name_in_owner = true
 position = Vector2(-122, -153)
 rotation = -0.0022482
 
+[node name="Path2D2" type="Path2D" parent="Player"]
+position = Vector2(-974, -572)
+curve = SubResource("Curve2D_fx10f")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D2"]
+position = Vector2(-122, -153)
+rotation = -0.0022482
+
+[node name="Area2D" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
+shape = SubResource("RectangleShape2D_kw523")
+
 [node name="PineTree" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(628, 688)
 
 [node name="PineTree4" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(520, 721)
-
-[node name="PineTree13" parent="." instance=ExtResource("2_tk2wh")]
-position = Vector2(577, 1027)
 
 [node name="PineTree14" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(880, 1294)
@@ -50,14 +63,11 @@ position = Vector2(880, 1294)
 [node name="PineTree6" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(331, 301)
 
-[node name="PineTree7" parent="." instance=ExtResource("2_tk2wh")]
-position = Vector2(247, 922)
-
-[node name="PineTree8" parent="." instance=ExtResource("2_tk2wh")]
-position = Vector2(1354, 481)
-
 [node name="PineTree9" parent="." instance=ExtResource("2_tk2wh")]
-position = Vector2(1615, 46)
+position = Vector2(1215, -58)
+
+[node name="PineTree13" parent="." instance=ExtResource("2_tk2wh")]
+position = Vector2(-345, 554)
 
 [node name="PineTree10" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(2020, 247)
@@ -71,14 +81,11 @@ position = Vector2(1750, 1267)
 [node name="PineTree5" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(667, 748)
 
-[node name="PineTree2" parent="." instance=ExtResource("2_tk2wh")]
-position = Vector2(880, 268)
-
 [node name="PineTree3" parent="." instance=ExtResource("2_tk2wh")]
 position = Vector2(1380, 828)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.3
+wait_time = 0.4
 autostart = true
 
 [node name="MusicBG" type="AudioStreamPlayer" parent="."]
@@ -87,5 +94,11 @@ stream = ExtResource("4_5d867")
 volume_db = -20.0
 autoplay = true
 
+[node name="Trees" type="Timer" parent="."]
+wait_time = 0.125
+autostart = true
+
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
+[connection signal="body_exited" from="Player/Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Trees" to="." method="_on_trees_timeout"]

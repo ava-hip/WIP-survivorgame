@@ -5,10 +5,11 @@ res://assets/pistol/impact/impact.tscn::e627a26adf1f8cb8d530700ea8345864::170729
 res://assets/pistol/muzzle_flash/muzzle_flash.tscn::5569654c4bd64b570833cbbe2dc03122::1707293264::res://.godot/exported/133200997/export-90a89615d4b1390c9541183b7556a426-muzzle_flash.scn
 res://assets/smoke_explosion/smoke_explosion.tscn::5013cf80ae17dd90662c168960ca06e3::1707293264::res://.godot/exported/133200997/export-1646972bfee10a95fd0bf6f30e3bc375-smoke_explosion.scn
 res://scenes/bullet.tscn::f07d83212ce5c13a1d0332d9741d468d::1707293264::res://.godot/exported/133200997/export-6d8e6ff1e6f20a36e0402d27c623c86c-bullet.scn
-res://scenes/gameover_interface.tscn::5e1c8132dab042908b6d586c22604557::1707293264::res://.godot/exported/133200997/export-3a5cf0d73b987ab130686563ce9f354b-gameover_interface.scn
+res://scenes/gameover_interface.tscn::84972d9ecd42ec3d36bdc876946b8ab6::1707304077::res://.godot/exported/133200997/export-3a5cf0d73b987ab130686563ce9f354b-gameover_interface.scn
 res://scenes/gun.tscn::6a3dc6aa85890f613410362b9a4e309c::1707293264::res://.godot/exported/133200997/export-e8b70ebe6a89c3504564097573c2ce26-gun.scn
-res://scenes/mob.tscn::fd0c4cfc5ebc57075f50e70d9e92b2d9::1707293383::res://.godot/exported/133200997/export-12225c12b25e8d9ce131a444da159cba-mob.scn
+res://scenes/mob.tscn::fd0c4cfc5ebc57075f50e70d9e92b2d9::1707304124::res://.godot/exported/133200997/export-12225c12b25e8d9ce131a444da159cba-mob.scn
 res://scenes/pine_tree.tscn::559015b0749941e2046cba0d7dcd0f7d::1707293264::res://.godot/exported/133200997/export-e0afc551313f7bfcbeae721a209906ee-pine_tree.scn
-res://scenes/player.tscn::af6c9b172fbb3ef692324e6dc8bd8983::1707293383::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/player.tscn::af6c9b172fbb3ef692324e6dc8bd8983::1707304077::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
 res://default_bus_layout.tres::a5a3d527c8f00df7f16d04baa4285575::1707293264::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
-res://game.tscn::3940ca96b75a44df6b34fe42c16bfd6a::1707293383::res://.godot/exported/133200997/export-609f762188a68253d349ec58c4f3a8d3-game.scn
+res://game.tscn::819793055c64d0134706e8a46d3d8e54::1707310548::res://.godot/exported/133200997/export-609f762188a68253d349ec58c4f3a8d3-game.scn
+res://scenes/bullet_2.tscn::7d059aab22bde872171d53e2903cc272::1707305500::res://.godot/exported/133200997/export-a564b8f2d6ef0dfce4209c35bcd2b10d-bullet_2.scn
