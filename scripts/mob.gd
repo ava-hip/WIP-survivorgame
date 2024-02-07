@@ -21,7 +21,6 @@ func take_damage():
 		health -= 2
 	else:
 		health -= 3
-	
 
 	if health <= 0 :
 		GameoverInterface.score += 1
