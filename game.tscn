@@ -91,12 +91,39 @@ autostart = true
 [node name="MusicBG" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 stream = ExtResource("4_5d867")
-volume_db = -20.0
+volume_db = -12.0
 autoplay = true
 
 [node name="Trees" type="Timer" parent="."]
 wait_time = 0.125
 autostart = true
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Interface"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -85.0
+offset_top = 16.0
+offset_right = 85.0
+offset_bottom = 80.0
+grow_horizontal = 2
+color = Color(0.152941, 0.168627, 0.188235, 0.627451)
+
+[node name="Score" type="Label" parent="Interface"]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -117.5
+offset_top = 19.0
+offset_right = 117.5
+offset_bottom = 76.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 41
+text = "score"
+horizontal_alignment = 1
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="body_exited" from="Player/Area2D" to="." method="_on_area_2d_body_exited"]

@@ -1,14 +1,14 @@
+ColorRect
+Label
+CanvasLayer
 CollisionShape2D
 Area2D
 Timer
 TextureRect
-ColorRect
 CanvasModulate
 Camera2D
-Label
 AudioStreamPlayer
 Button
-CanvasLayer
 PathFollow2D
 Path2D
 ProgressBar

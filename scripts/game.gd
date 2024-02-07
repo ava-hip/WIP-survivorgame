@@ -27,8 +27,15 @@ func _on_player_health_depleted():
 	GameoverInterface.gameover_interface_on()
 	GameoverInterface.display_score()
 
-
+func update_score():
+	var score = 0
+	score =+ GameoverInterface.score
+	%Score.text = str(score)
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group(TREE_GROUP):
 		body.queue_free()
+
+func _process(delta):
+	update_score()
+	
