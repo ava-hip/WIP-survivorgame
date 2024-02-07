@@ -14,24 +14,30 @@ size = Vector2(58.3333, 69.4445)
 platform_floor_layers = 4294901760
 script = ExtResource("1_7wu43")
 
-[node name="HappyBoo" parent="." instance=ExtResource("1_get5i")]
-unique_name_in_owner = true
-position = Vector2(0, 3)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_cvl00")
 
-[node name="Gun" parent="." instance=ExtResource("3_4e7w8")]
-position = Vector2(0, -27)
-
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="HurtBox" type="Area2D" parent="."]
+[node name="SpriteOR" type="Marker2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(-1, -48)
+
+[node name="HappyBoo" parent="SpriteOR" instance=ExtResource("1_get5i")]
+unique_name_in_owner = true
+position = Vector2(1, 51)
+
+[node name="Gun" parent="SpriteOR" instance=ExtResource("3_4e7w8")]
+position = Vector2(1, 21)
+scale = Vector2(1, 0.992806)
+
+[node name="HurtBox" type="Area2D" parent="SpriteOR"]
+unique_name_in_owner = true
+position = Vector2(1, 48)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpriteOR/HurtBox"]
 position = Vector2(-2, -41)
 scale = Vector2(1.44, 1.44)
 shape = SubResource("RectangleShape2D_5pluq")

@@ -1,5 +1,6 @@
-ColorRect
+Marker2D
 Label
+ColorRect
 CanvasLayer
 CollisionShape2D
 Area2D
@@ -11,4 +12,3 @@ AudioStreamPlayer
 Button
 PathFollow2D
 Path2D
-ProgressBar
