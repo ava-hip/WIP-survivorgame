@@ -1,4 +1,5 @@
-res://scenes/player.tscn
-res://scripts/player.gd
 res://game.tscn
+res://scenes/player.tscn
 res://assets/characters/happy_boo/happy_boo.tscn
+res://assets/characters/happy_boo/happy_boo.gd
+res://scripts/player.gd

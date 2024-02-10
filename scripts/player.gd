@@ -15,10 +15,10 @@ func _physics_process(delta):
 	elif direction.x < 0:
 		lrPosition.scale.x = -1
 	
-	if direction.y > 0:
-		%SpriteOR/HappyBoo/Colorizer/SquareBody/SquareFace.show()
-	elif direction.y < 0:
-		%SpriteOR/HappyBoo/Colorizer/SquareBody/SquareFace.hide()
+	#if direction.y > 0:
+		#%SpriteOR/HappyBoo/Colorizer/SquareBody/SquareFace.show()
+	#elif direction.y < 0:
+		#%SpriteOR/HappyBoo/Colorizer/SquareBody/SquareFace.hide()
 	
 	
 	if velocity.length() > 0.0: 

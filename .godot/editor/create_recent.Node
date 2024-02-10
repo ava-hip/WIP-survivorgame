@@ -1,3 +1,5 @@
+AnimationPlayer
+Sprite2D
 Marker2D
 Label
 ColorRect
@@ -11,4 +13,3 @@ Camera2D
 AudioStreamPlayer
 Button
 PathFollow2D
-Path2D
